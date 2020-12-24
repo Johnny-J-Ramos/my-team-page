@@ -25,6 +25,11 @@ header {
 .picture {
   width: 238px;
 }
+@media screen and (max-width: 1046px) {
+  .picture {
+    width: 200px;
+  }
+}
 
 .text {
   font-family: PT Serif;
@@ -64,4 +69,14 @@ header {
   grid-template-rows: repeat(8, auto);
   grid-template-columns: repeat(3, 1fr);
   row-gap: 20px;
+}
+
+.jobs {
+  font-size: 12px;
+  font-weight: 400;
+  text-transform: uppercase;
+  transform: rotate(90deg);
+  position: relative;
+  right: -25%;
+  top: -47%;
 }
