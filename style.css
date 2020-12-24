@@ -29,6 +29,10 @@ header {
   .picture {
     width: 200px;
   }
+  .jobs {
+    right: -15%;
+    top: -37%;
+  }
 }
 
 .text {
@@ -84,7 +88,7 @@ header {
 
 @media (max-width: 950px) {
   main .jobs {
-    top: -145px;
+    top: -115px;
   }
 }
 
@@ -100,13 +104,17 @@ header {
 }
 
 @media screen and (max-width: 669px) {
-  .modal_cards {
-    grid-template-columns: repeat(2, 1fr);
-  }
   body {
     padding: 10px;
   }
   header {
     display: inline-block;
+  }
+}
+
+@media screen and (max-width: 950px) {
+  header {
+    -ms-grid-columns: auto;
+    grid-template-columns: auto;
   }
 }
