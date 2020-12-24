@@ -1,14 +1,67 @@
 * {
+  box-sizing: border-box;
   margin: 0;
   padding: 0;
-  box-sizing: border-box;
+}
+
+header,
+main,
+footer {
+  max-width: 970px;
+  margin: 0 auto;
 }
 
 body {
   font-family: 'Poppins', sans-serif;
 }
 
+header {
+  display: grid;
+  grid-template-columns: 50% 50%;
+
+  margin-top: 7%;
+}
+
+.picture {
+  width: 238px;
+}
+
+.text {
+  font-family: PT Serif;
+  font-style: normal;
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 48px;
+  letter-spacing: -0.045em;
+
+  color: #000000;
+}
+
+.subtitle {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: 600;
+  font-size: 18px;
+  line-height: 27px;
+  /* identical to box height */
+
+  text-transform: uppercase;
+}
+
+.description {
+  font-family: Poppins;
+  font-style: normal;
+  font-weight: normal;
+  font-size: 18px;
+  line-height: 27px;
+  margin: 10px 0 50px;
+
+  color: #000000;
+}
+
 .modal_cards {
-  display: flex;
-  max-width: 900px;
+  display: grid;
+  grid-template-rows: repeat(8, auto);
+  grid-template-columns: repeat(3, 1fr);
+  row-gap: 20px;
 }
